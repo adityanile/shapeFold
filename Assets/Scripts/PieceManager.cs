@@ -59,6 +59,12 @@ public class PieceManager : MonoBehaviour
                 PieceReached();
             }
         }
+        
+        if(reached && initailised)
+        {
+            transform.position = new Vector3(0, 0, 0);
+            transform.rotation = new Quaternion(0,0, 0, 0);
+        }
     }
 
     void PieceReached()
